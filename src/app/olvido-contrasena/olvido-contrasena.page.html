@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title  style="text-align: center;position: relative; top: 15px;">Prueba uno</ion-title>
+    <ion-button style="position: relative; top: 10px;" fill="clear" [routerLink]="('/')">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+      Atras
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 style="text-align: center;position: relative; top: 15px;">Recupera tu contraseña </h1>
+  <ion-card-subtitle style="text-align: center;position: relative; top: 25px;" >
+    Rellena los camp0os para solicitar tu nueva contraseña
+  </ion-card-subtitle>
+
+  <ion-item style="position: relative; top: 60px;">
+    <ion-label position="stacked">Correo</ion-label>
+    <ion-input placeholder="Ingresa tu correo registrado"></ion-input>
+  </ion-item>
+  <ion-item style="position: relative; top: 70px;">
+    <ion-label position="stacked">Usuario</ion-label>
+    <ion-input placeholder="Ingresa tu usuario registrado"></ion-input>
+  </ion-item>
+
+  <ion-button style="text-align: center;position: relative; top: 80px;left: 90px;" fill="clear" (click)="presentAlert()">Solicitar</ion-button>
+</ion-content>

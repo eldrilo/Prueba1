@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title  style="text-align: center;position: relative; top: 15px;">Prueba uno</ion-title>
+    <ion-button style="position: relative; top: 10px;" fill="clear" [routerLink]="('/')">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+      Atras
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 style="text-align: center;position: relative; top: 15px;">Nueva cuenta</h1>
+  <ion-card-subtitle style="text-align: center;position: relative; top: 10px;" >
+    Completa los campos
+  </ion-card-subtitle>
+
+  <ion-item style="position: relative; top: 50px;">
+    <ion-label position="stacked">Usuario</ion-label>
+    <ion-input placeholder="Ingresa tu nick"></ion-input>
+  </ion-item>
+  <ion-item style="position: relative; top: 50px;">
+    <ion-label position="stacked">Correo</ion-label>
+    <ion-input placeholder="Ingresa tu email"></ion-input>
+  </ion-item>
+
+  <ion-list style="position: relative; top: 50px;">
+    <ion-item>
+      <ion-label  position="floating"> Selecionar tu carrera </ion-label>
+        <ion-select  [multiple]="true">
+          <ion-select-option value="apples">Apples</ion-select-option>
+          <ion-select-option value="oranges">Oranges</ion-select-option>
+          <ion-select-option value="bananas">Bananas</ion-select-option>
+        </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-item style="position: relative; top: 50px;">
+    <ion-label position="stacked">Contraseña</ion-label>
+    <ion-input  min-length="4"type="password" placeholder="Ingresa tu contraseña"></ion-input>
+  </ion-item>
+  <ion-button style="position: relative; top: 55px;" color="success" size="large" (click)="presentAlert()" >Registrar</ion-button>
+  <ion-button style="position: relative; top: 55px;" color="medium"size="large" fill="clear">Limpiar</ion-button>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-content>
+  <h1 style="text-align: center;position: relative; top: 15px;">PRUEBA UNO</h1>
+  <ion-card-subtitle style="text-align: center;position: relative; top: 15px;" >
+    Aqui comienza todo
+  </ion-card-subtitle>
+  <h3 style="text-align: center;position: relative; top: 15px;">Bienvenido</h3>
+
+
+  <ion-item style="position: relative; top: 35px;">
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="string"   min-length="8" placeholder="Enter text" ></ion-input>
+  </ion-item>
+  <ion-item style="position: relative; top: 35px;">
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input  min-length="4"type="password" ></ion-input>
+  </ion-item>
+  <br>
+  <ion-button style="position: relative; top: 35px;" color="medium"  expand="full" [routerLink]="('/catalogo')">Ingresar</ion-button>
+  <a style="text-align: center;position: relative; top: 65px;"  class="a2" [routerLink]="('/registro')">Crea una cuenta gratis</a>
+  <br>
+  <a style="text-align: center;position: relative; top:  90px;" class="a1" [routerLink]="('/olvido-contrasena')"> ¿Olvidaste la contraseña? </a>
+
+</ion-content>
+

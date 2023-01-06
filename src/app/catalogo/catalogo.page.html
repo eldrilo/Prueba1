@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title  style="text-align: center;position: relative; top: 15px;">Prueba uno</ion-title>
+    <ion-button style="position: relative; top: 10px;" fill="clear" [routerLink]="('/')">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+      Salir
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <H1 style="text-align: center;">Catalogo de productos</H1>
+      <ion-list>
+        <ion-item *ngFor="let l of listado" >
+          <ion-avatar slot="start">
+            <img [src]="'https://picsum.photos/80/80?random=' " />
+          </ion-avatar>
+          <ion-label>{{ l.title }}</ion-label>
+          <ion-card-subtitle >
+            Precio : {{l.price}}
+          </ion-card-subtitle>
+
+          <ion-button fill="clear" >
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+
+        </ion-item>
+
+      </ion-list>
+
+    <!-- <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll> -->
+
+</ion-content>
